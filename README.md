@@ -1,16 +1,76 @@
-# React + Vite
+# FinSight AI 💹
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered financial advisor app designed for students — helping them learn about stocks, manage portfolios, and build financial literacy through smart insights and interactive quizzes.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 📊 **Stock Tracker** — Real-time stock data and insights
+- 💼 **Portfolio Manager** — Track and manage your investments
+- 🤖 **AI Chat Advisor** — Ask financial questions, get instant AI-powered answers
+- 🧠 **Financial Quiz** — Test and improve your financial knowledge
+- 📈 **Dashboard** — Overview of your financial activity
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Frontend**
+- React.js + Vite
+- Tailwind CSS
 
-## Expanding the ESLint configuration
+**Backend**
+- FastAPI + Uvicorn
+- Python
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**AI**
+- Groq API (LLaMA)
+
+## 📁 Project Structure
+```
+finsight/
+├── finsight-frontend/     # React frontend
+│   ├── src/
+│   │   ├── components/    # Navbar, etc.
+│   │   ├── pages/         # Dashboard, Stocks, Portfolio
+│   │   └── App.jsx
+│   └── vite.config.js
+│
+└── finsight-backend/      # FastAPI backend
+    ├── routes/
+    │   ├── chat.py
+    │   ├── quiz.py
+    │   ├── stocks.py
+    │   └── portfolio.py
+    └── main.py
+```
+
+## ⚙️ Getting Started
+
+### Backend
+```bash
+cd finsight-backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
+### Frontend
+```bash
+cd finsight-frontend
+npm install
+npm run dev
+```
+
+## 🌐 API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/` | Health check |
+| POST | `/chat` | AI chat response |
+| GET | `/stocks` | Fetch stock data |
+| GET | `/portfolio` | Get portfolio |
+| POST | `/quiz` | Generate quiz |
+
+## 👨‍💻 Developer
+
+**Arpit Sharma** — B.Tech CSE, Raj Kumar Goel Institute, Ghaziabad
+
+---
+
