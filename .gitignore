@@ -1,24 +1,19 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# ===== Python Backend =====
+finsight-backend/venv/
+finsight-backend/__pycache__/
+finsight-backend/*.pyc
+finsight-backend/*.pyo
+finsight-backend/finsight.db
+finsight-backend/.env
 
-node_modules
-dist
-dist-ssr
-*.local
+# ===== Node / Frontend =====
+node_modules/
+dist/
+.vite/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# ===== OS / Editor junk =====
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+*.swp
+.idea/
+.vscode/

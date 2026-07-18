@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const API = '/api'
+const API = import.meta.env.VITE_API_URL || '/api'
 
 const fallback = [
   { symbol: 'RELIANCE', name: 'Reliance Industries', price: 2847, change: 1.4, exchange: 'NSE' },

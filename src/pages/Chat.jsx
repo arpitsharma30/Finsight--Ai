@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 
 // Use Vite dev-server proxy (/api -> http://localhost:8000) to avoid CORS/port mismatch.
-const API = '/api'
+const API = import.meta.env.VITE_API_URL || '/api'
 
 const suggestions = [
   'How should a student start investing?',

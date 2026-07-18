@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 // Use Vite dev-server proxy (/api -> http://localhost:8000)
-const API = '/api'
+const API = import.meta.env.VITE_API_URL || '/api'
 
 export default function Dashboard({ navigate, user, startOnboarding, token }) {
   const [stocks, setStocks] = useState([])

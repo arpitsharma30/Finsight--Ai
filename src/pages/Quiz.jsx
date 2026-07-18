@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 // Use Vite dev-server proxy (/api -> http://localhost:8000)
-const API = '/api'
+const API = import.meta.env.VITE_API_URL || '/api'
 
 const fallbackQuiz = [
   { question: 'What is a mutual fund?', options: ['A single stock investment', 'A pool of investor money managed professionally', 'A type of government bond', 'A savings account'], correct: 1, explanation: 'A mutual fund pools money from multiple investors and invests in a diversified portfolio managed by professionals.' },

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 // Use Vite dev-server proxy (/api -> http://localhost:8000)
-const API = '/api'
+const API = import.meta.env.VITE_API_URL || '/api'
 const colors = ['#4f8ef7', '#7c3aed', '#06d6a0', '#fbbf24', '#f43f5e']
 
 const fallback = {

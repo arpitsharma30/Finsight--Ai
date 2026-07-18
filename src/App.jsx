@@ -10,7 +10,7 @@ import Auth from './pages/Auth'
 import Navbar from './components/Navbar'
 
 export default function App() {
-  const API = '/api'
+  const API = import.meta.env.VITE_API_URL || '/api'
   const [page, setPage] = useState('landing')
   const [pageKey, setPageKey] = useState(0)
   const [token, setToken] = useState(localStorage.getItem('finsight_token') || '')
