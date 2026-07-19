@@ -1,7 +1,7 @@
 import httpx
 import logging
 
-logger = logging.getLogger("uvicorn")
+logger = logging.getLogger("finsight-backend")
 
 # Static list of supported/fallback stocks
 DEFAULT_STOCKS = {
